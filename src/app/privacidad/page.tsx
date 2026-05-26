@@ -184,6 +184,169 @@ const sections: Section[] = [
   },
 ];
 
+type TermsSection = {
+  number: string;
+  title: string;
+  content: React.ReactNode;
+};
+
+const termsSections: TermsSection[] = [
+  {
+    number: '1.',
+    title: 'NATURALEZA DEL SERVICIO',
+    content: (
+      <p className={proseP}>
+        Los servicios ofrecidos en esta plataforma consisten en asesoría jurídica especializada en
+        propiedad industrial, redacción de escritos de respuesta a observaciones de forma y de fondo,
+        y representación administrativa ante INAPI. En ningún caso constituyen una garantía de
+        resultado, promesa de registro, ni seguridad de éxito en el procedimiento de obtención de
+        marca u otro derecho de propiedad industrial.
+      </p>
+    ),
+  },
+  {
+    number: '2.',
+    title: 'AUSENCIA DE GARANTÍA DE RESULTADO',
+    content: (
+      <>
+        <p className={proseP}>
+          El ejercicio de los derechos de propiedad industrial ante INAPI y el TDPI implica la
+          intervención de organismos públicos independientes, cuyas resoluciones son de carácter
+          discrecional dentro del marco legal vigente. Este estudio jurídico no garantiza, en
+          ninguna circunstancia, la concesión del registro de marca, la aceptación de la observación
+          respondida, ni el resultado favorable de recurso alguno.
+        </p>
+        <p className={proseP}>
+          La calidad técnica y jurídica de los escritos que elaboramos es el único compromiso que
+          asumimos. El resultado final depende exclusivamente de la autoridad competente.
+        </p>
+      </>
+    ),
+  },
+  {
+    number: '3.',
+    title: 'FACTORES EXTERNOS FUERA DE NUESTRO CONTROL',
+    content: (
+      <>
+        <p className={proseP}>
+          El resultado de un procedimiento marcario puede verse afectado por circunstancias ajenas
+          a la voluntad y diligencia de este estudio, entre las cuales se incluyen, sin carácter
+          taxativo:
+        </p>
+        <ul className={proseUl}>
+          <li>
+            Cambios de criterio jurisprudencial o administrativo de INAPI o el TDPI con
+            posterioridad a la contratación del servicio;
+          </li>
+          <li>
+            Existencia de marcas anteriores no detectadas al momento de la prestación del servicio,
+            ya sea por actualización tardía de bases de datos o por solicitudes en trámite no
+            publicadas;
+          </li>
+          <li>
+            Modificaciones legislativas o reglamentarias que alteren las condiciones de
+            registrabilidad del signo;
+          </li>
+          <li>
+            Resoluciones administrativas o jurisdiccionales fundadas en criterios de apreciación
+            técnica propios de la autoridad;
+          </li>
+          <li>Oposiciones de terceros presentadas durante o después de la tramitación;</li>
+          <li>
+            Deficiencias, imprecisiones u omisiones en la información y documentación proporcionada
+            por el cliente al momento de contratar el servicio;
+          </li>
+          <li>
+            Incumplimiento de plazos imputables al cliente, incluyendo la demora en la firma y
+            remisión del poder, en la entrega de documentos solicitados o en la presentación del
+            escrito ante INAPI con su propia clave única cuando corresponda al plan sin
+            representación.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    number: '4.',
+    title: 'RESPONSABILIDAD LIMITADA',
+    content: (
+      <p className={proseP}>
+        En caso de resultado adverso en el procedimiento, la responsabilidad de este estudio quedará
+        limitada, en todo evento, al monto efectivamente pagado por el servicio contratado. No
+        seremos responsables por daños directos, indirectos, consecuenciales, lucro cesante, pérdida
+        de oportunidades comerciales, perjuicios derivados del no registro de la marca ni por ningún
+        otro daño patrimonial o extrapatrimonial que el cliente alegue como consecuencia del
+        resultado del procedimiento ante INAPI o el TDPI.
+      </p>
+    ),
+  },
+  {
+    number: '5.',
+    title: 'PLAZO DE ENTREGA Y CONTINGENCIAS',
+    content: (
+      <p className={proseP}>
+        El plazo de entrega del escrito se cuenta desde la recepción íntegra de todos los
+        antecedentes requeridos y la confirmación del pago. Circunstancias de fuerza mayor, caso
+        fortuito, fallas en los sistemas de INAPI, interrupciones en los servicios de comunicación
+        o factores técnicos ajenos a este estudio podrán afectar los plazos comprometidos, sin que
+        ello genere responsabilidad de nuestra parte, salvo el deber de informar al cliente con la
+        mayor brevedad posible.
+      </p>
+    ),
+  },
+  {
+    number: '6.',
+    title: 'ALCANCE DEL PODER DE REPRESENTACIÓN',
+    content: (
+      <p className={proseP}>
+        El mandato que el cliente suscribe tiene por objeto la representación administrativa ante
+        INAPI en los términos específicamente indicados en el documento. No habilita a este estudio
+        para comprometer fondos adicionales del mandante, interponer acciones judiciales ante el
+        TDPI u otros tribunales, ni realizar actuaciones que excedan el alcance del plan contratado,
+        sin autorización expresa y por escrito del cliente.
+      </p>
+    ),
+  },
+  {
+    number: '7.',
+    title: 'INFORMACIÓN PROPORCIONADA POR EL CLIENTE',
+    content: (
+      <p className={proseP}>
+        El cliente es el único responsable de la veracidad, exactitud y completitud de la
+        información y documentos que entregue a esta plataforma. Este estudio no verificará de forma
+        independiente la titularidad, origen, licitud ni autenticidad de los antecedentes aportados.
+        Cualquier consecuencia derivada de información falsa, incompleta o errónea provista por el
+        cliente será de exclusiva responsabilidad de este.
+      </p>
+    ),
+  },
+  {
+    number: '8.',
+    title: 'NO CONSTITUYE ASESORÍA LEGAL CONTINUA',
+    content: (
+      <p className={proseP}>
+        La contratación de un plan en esta plataforma no genera una relación de asesoría jurídica
+        permanente ni continua. La relación profesional queda limitada al servicio específicamente
+        contratado y concluye con la entrega del escrito o con la gestión administrativa comprometida
+        según el plan elegido.
+      </p>
+    ),
+  },
+  {
+    number: '9.',
+    title: 'JURISDICCIÓN Y LEY APLICABLE',
+    content: (
+      <p className={proseP}>
+        Los presentes términos se rigen por las leyes de la República de Chile. Para cualquier
+        controversia derivada de la prestación de los servicios, las partes se someten a la
+        jurisdicción de los tribunales ordinarios de justicia con asiento en la ciudad de Santiago
+        de Chile, renunciando expresamente a cualquier otro fuero o domicilio que pudiere
+        corresponderles.
+      </p>
+    ),
+  },
+];
+
 export default function PrivacidadPage() {
   return (
     <>
@@ -200,7 +363,7 @@ export default function PrivacidadPage() {
         </div>
       </section>
 
-      {/* CONTENIDO */}
+      {/* CONTENIDO — POLÍTICA DE PRIVACIDAD */}
       <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="flex flex-col gap-10">
@@ -212,6 +375,65 @@ export default function PrivacidadPage() {
                 {section.content}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* DIVISOR — TÉRMINOS Y CONDICIONES */}
+      <section
+        className="px-4 py-16 sm:px-6 lg:px-8"
+        style={{ backgroundColor: '#1B3A6B' }}
+      >
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-extrabold text-white md:text-4xl">
+            Términos y Condiciones
+          </h2>
+          <p className="mt-3 text-sm font-semibold uppercase tracking-widest text-white/60">
+            Disclaimer Legal — Alcances, Limitaciones y Exclusiones de Responsabilidad
+          </p>
+        </div>
+      </section>
+
+      {/* AVISO LEGAL INTRO */}
+      <section className="bg-white px-4 pt-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <div
+            className="rounded-lg p-6 text-sm leading-relaxed text-[#1B3A6B]"
+            style={{ backgroundColor: '#F0F4FA', borderLeft: '4px solid #2557A7' }}
+          >
+            <p className="font-bold">AVISO LEGAL IMPORTANTE — LEA DETENIDAMENTE ANTES DE CONTRATAR</p>
+            <p className={proseP}>
+              El presente aviso legal establece los alcances, limitaciones y exclusiones de
+              responsabilidad aplicables a todos los servicios prestados a través de esta plataforma
+              en materia de propiedad industrial ante el Instituto Nacional de Propiedad Industrial
+              (INAPI) y el Tribunal de Propiedad Industrial (TDPI).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTENIDO — TÉRMINOS Y CONDICIONES */}
+      <section className="bg-white px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <div className="flex flex-col gap-10">
+            {termsSections.map((section) => (
+              <div key={section.number}>
+                <h3 className="text-base font-bold text-[#1B3A6B]">
+                  {section.number} {section.title}
+                </h3>
+                {section.content}
+              </div>
+            ))}
+          </div>
+
+          {/* Cierre legal */}
+          <div
+            className="mt-12 rounded-lg p-6 text-xs leading-relaxed text-gray-600"
+            style={{ backgroundColor: '#F0F4FA', borderLeft: '4px solid #2557A7' }}
+          >
+            Este aviso legal forma parte integral de los Términos y Condiciones de uso de la
+            plataforma. La contratación de cualquier plan implica la aceptación total e irrevocable
+            de las limitaciones aquí descritas.
           </div>
         </div>
       </section>
