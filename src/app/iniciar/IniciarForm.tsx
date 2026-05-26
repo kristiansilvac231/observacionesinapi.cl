@@ -55,7 +55,6 @@ export function IniciarForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [status, setStatus] = useState<FormStatus>('idle');
-  const [fileError, setFileError] = useState('');
   const [successEmail, setSuccessEmail] = useState('');
 
   const rawTipo = searchParams.get('tipo');
@@ -67,20 +66,8 @@ export function IniciarForm() {
     router.push(`/iniciar?${new URLSearchParams(params).toString()}`);
   }
 
-  function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const file = e.currentTarget.files?.[0];
-    if (!file) { setFileError(''); return; }
-    if (file.size > 10 * 1024 * 1024) {
-      setFileError('El archivo no puede superar 10 MB.');
-      e.currentTarget.value = '';
-    } else {
-      setFileError('');
-    }
-  }
-
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (fileError) return;
     setStatus('submitting');
     const formData = new FormData(e.currentTarget);
     const email = String(formData.get('email') ?? '');
@@ -256,24 +243,11 @@ export function IniciarForm() {
             placeholder="Cuéntanos el contexto de tu marca, nombre de la marca solicitada, cualquier detalle relevante..."
             className={`${inputClass} resize-none`}
           />
-        </div>
-
-        <div>
-          <label className={labelClass} htmlFor="archivo">PDF de la observación</label>
-          <input
-            id="archivo" name="archivo" type="file" accept=".pdf" required
-            onChange={handleFileChange}
-            className="w-full rounded border border-gray-300 px-4 py-3 text-sm text-[#0F1C35] file:mr-4 file:rounded file:border-0 file:bg-[#2557A7] file:px-3 file:py-1 file:text-xs file:font-bold file:text-white"
-          />
-          {fileError
-            ? (
-                <p className="mt-1 text-xs text-red-500">{fileError}</p>
-              )
-            : (
-                <p className="mt-1 text-xs text-gray-400">
-                  Tu documento se transmite de forma segura y confidencial.
-                </p>
-              )}
+          <p className="mt-2 text-xs text-gray-400">
+            ¿Tienes el PDF de tu observación? Puedes enviárnoslo por email a{' '}
+            <span className="font-semibold">contacto@mpd-intelectual.cl</span>{' '}
+            junto con tu número de solicitud.
+          </p>
         </div>
 
         {status === 'error' && (
@@ -284,7 +258,7 @@ export function IniciarForm() {
 
         <button
           type="submit"
-          disabled={status === 'submitting' || !!fileError}
+          disabled={status === 'submitting'}
           className="rounded py-3 text-sm font-bold tracking-widest text-white transition-colors hover:opacity-90 disabled:opacity-60"
           style={{ backgroundColor: '#2557A7' }}
         >
