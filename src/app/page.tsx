@@ -88,9 +88,8 @@ export default function Home() {
           className="mx-auto mt-5 max-w-3xl text-center text-[1.78rem] text-[#0F1C35] md:text-[3.56rem]"
           style={{ lineHeight: 1.2 }}
         >
-          <span className="block font-normal text-[#1B3A6B]">Responde tu observación con</span>
-          <span className="block font-extrabold text-[#2557A7]">el nivel de apoyo</span>
-          <span className="block font-normal text-[#1B3A6B]">que tu <strong className="text-[#2557A7]">marca</strong> necesita</span>
+          <span className="block font-normal text-[#1B3A6B]">Tienes una observación de INAPI.</span>
+          <span className="block font-extrabold text-[#2557A7]">Nosotros la respondemos por ti en 48 horas</span>
         </h1>
 
         {/* Subtítulo */}
