@@ -64,6 +64,10 @@ export function Footer() {
         {/* Franja inferior */}
         <div className="mt-10 border-t border-white/20 pt-6 text-center text-xs text-white/50">
           © {new Date().getFullYear()} Observacionesinapi.cl — Todos los derechos reservados
+          {' '}·{' '}
+          <Link href="/privacidad" className="hover:text-white/80">
+            Política de Privacidad
+          </Link>
         </div>
       </div>
     </footer>
