@@ -99,6 +99,31 @@ export default function Home() {
           completa o cotización personalizada si corresponde apelar.
         </p>
 
+        {/* Botones de acción rápida */}
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <Link
+            href="/iniciar?tipo=fondo"
+            className="rounded px-6 py-3 text-xs font-bold tracking-widest text-white transition-opacity hover:opacity-90"
+            style={{ backgroundColor: '#C62828' }}
+          >
+            QUIERO RESPONDER FONDO
+          </Link>
+          <Link
+            href="/iniciar?tipo=forma"
+            className="rounded px-6 py-3 text-xs font-bold tracking-widest text-white transition-opacity hover:opacity-90"
+            style={{ backgroundColor: '#C62828' }}
+          >
+            QUIERO CORREGIR FORMA
+          </Link>
+          <Link
+            href="/apelacion-de-marca"
+            className="rounded px-6 py-3 text-xs font-bold tracking-widest text-white transition-opacity hover:opacity-90"
+            style={{ backgroundColor: '#C62828' }}
+          >
+            SOLICITAR COTIZACIÓN
+          </Link>
+        </div>
+
         {/* Tarjetas */}
         <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {cards.map((card) => (
