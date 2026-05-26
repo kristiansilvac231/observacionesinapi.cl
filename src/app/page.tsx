@@ -93,7 +93,7 @@ export default function Home() {
         </h1>
 
         {/* Subtítulo */}
-        <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-[#0F1C35]">
+        <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-[#C62828]">
           Tienes 30 días hábiles para responder. No los pierdas.
         </p>
 
