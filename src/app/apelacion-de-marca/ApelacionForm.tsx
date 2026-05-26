@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/PLACEHOLDER';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xwvzrwqg';
 
 const inputClass =
   'w-full rounded border border-gray-300 px-4 py-3 text-sm text-[#0F1C35] placeholder-gray-400 outline-none focus:border-[#2557A7] focus:ring-1 focus:ring-[#2557A7]';

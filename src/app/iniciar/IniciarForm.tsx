@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/FORMSPREE_ENDPOINT';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xwvzrwqg';
 
 type TipoKey = 'fondo' | 'forma';
 type PlanKey = 'escrito' | 'correccion' | 'representacion';
