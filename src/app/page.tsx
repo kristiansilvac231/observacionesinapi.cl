@@ -111,7 +111,7 @@ export default function Home() {
               }}
             >
               {/* Título tarjeta */}
-              <h2 className="text-xl font-bold uppercase tracking-wider text-[#C62828]">
+              <h2 className="text-xl font-bold uppercase tracking-wider text-[#2557A7]">
                 {card.number}. {card.title}
               </h2>
 
