@@ -24,7 +24,7 @@ const sections: Section[] = [
         Observacionesinapi.cl es un servicio operado por el holding Innova-Legal. Para efectos
         de la legislación de protección de datos personales, actuamos como responsable del
         tratamiento de los datos que usted nos proporciona. Puede contactarnos en{' '}
-        <span className="font-semibold text-[#2557A7]">contacto@mpd-intelectual.cl</span>{' '}
+        <span className="font-semibold text-[#2557A7]">contacto@observacionesinapi.cl</span>{' '}
         para cualquier consulta relativa a sus datos.
       </p>
     ),
@@ -143,7 +143,7 @@ const sections: Section[] = [
         Usted puede ejercer en cualquier momento sus derechos de acceso, rectificación,
         cancelación (supresión) y oposición respecto de sus datos personales, así como el
         derecho a la portabilidad cuando corresponda. Para ejercerlos, escriba a{' '}
-        <span className="font-semibold text-[#2557A7]">contacto@mpd-intelectual.cl</span>{' '}
+        <span className="font-semibold text-[#2557A7]">contacto@observacionesinapi.cl</span>{' '}
         identificándose adecuadamente. Responderemos su solicitud en los plazos que establece
         la ley.
       </p>
@@ -178,7 +178,7 @@ const sections: Section[] = [
       <p className={proseP}>
         Para cualquier consulta sobre esta política o sobre el tratamiento de sus datos,
         escríbanos a{' '}
-        <span className="font-semibold text-[#2557A7]">contacto@mpd-intelectual.cl</span>.
+        <span className="font-semibold text-[#2557A7]">contacto@observacionesinapi.cl</span>.
       </p>
     ),
   },
