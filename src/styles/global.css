@@ -1,3 +1,21 @@
-@layer theme, base, clerk, components, utilities; /* Ensure Clerk is compatible with Tailwind CSS v4 */
-
 @import 'tailwindcss';
+
+@theme {
+  --color-azul-primario: #1B3A6B;
+  --color-azul-secundario: #2557A7;
+  --color-azul-claro: #EBF0FA;
+  --color-azul-acento: #1A73E8;
+}
+
+:root {
+  --azul-primario: #1B3A6B;
+  --azul-secundario: #2557A7;
+  --azul-claro: #EBF0FA;
+  --azul-acento: #1A73E8;
+  --texto-principal: #1A1A2E;
+  --texto-secundario: #4A5568;
+  --blanco: #ffffff;
+  --borde: #D1D9E6;
+  --exito: #2E7D32;
+  --alerta: #E65100;
+}

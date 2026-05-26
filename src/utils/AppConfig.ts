@@ -1,27 +1,7 @@
-import { enUS, frFR } from '@clerk/localizations';
-import type { LocalizationResource } from '@clerk/shared/types';
-import type { LocalePrefixMode } from 'next-intl/routing';
-
-/** Locale prefix strategy for next-intl routing. */
-const localePrefix: LocalePrefixMode = 'as-needed';
-
-// FIXME: Customize this configuration for your product
-/** Centralized application configuration */
 export const AppConfig = {
-  name: 'Nextjs Starter',
-  i18n: {
-    locales: ['en', 'fr'],
-    defaultLocale: 'en',
-    localePrefix,
-  },
-};
-
-const supportedLocales: Record<string, LocalizationResource> = {
-  en: enUS,
-  fr: frFR,
-};
-
-export const ClerkLocalizations = {
-  defaultLocale: enUS,
-  supportedLocales,
+  name: 'Observacionesinapi.cl',
+  url: 'https://observacionesinapi.cl',
+  description:
+    'Responde tu observación de marca ante INAPI en 48 horas. Abogados especializados en propiedad industrial. Observaciones de forma y fondo.',
+  locale: 'es_CL',
 };
