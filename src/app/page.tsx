@@ -85,7 +85,7 @@ export default function Home() {
 
         {/* H1 */}
         <h1
-          className="mx-auto mt-5 max-w-3xl text-center text-3xl text-[#0F1C35] md:text-6xl"
+          className="mx-auto mt-5 max-w-3xl text-center text-[1.78rem] text-[#0F1C35] md:text-[3.56rem]"
           style={{ lineHeight: 1.2 }}
         >
           <span className="block font-normal text-[#1B3A6B]">Responde tu observación con</span>
