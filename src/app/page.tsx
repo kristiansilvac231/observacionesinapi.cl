@@ -94,8 +94,7 @@ export default function Home() {
 
         {/* Subtítulo */}
         <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-[#0F1C35]">
-          <strong>Tres caminos simples para avanzar:</strong> escrito listo para presentar, representación
-          completa o cotización personalizada si corresponde apelar.
+          Tienes 30 días hábiles para responder. No los pierdas.
         </p>
 
         {/* Tarjetas */}
