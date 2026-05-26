@@ -85,11 +85,11 @@ export default function Home() {
 
         {/* H1 */}
         <h1
-          className="mx-auto mt-5 max-w-3xl text-center text-[1.78rem] text-[#0F1C35] md:text-[3.56rem]"
+          className="mx-auto mt-5 max-w-3xl text-center text-[#0F1C35]"
           style={{ lineHeight: 1.2 }}
         >
-          <span className="block font-normal text-[#1B3A6B]">Tienes una observación de INAPI.</span>
-          <span className="block font-extrabold text-[#2557A7]">Nosotros la respondemos por ti en 48 horas</span>
+          <span className="block font-normal text-[#1B3A6B]" style={{ fontSize: '36px' }}>Tienes una observación de INAPI.</span>
+          <span className="block font-extrabold text-[#2557A7]" style={{ fontSize: '48px' }}>Nosotros la respondemos por ti en 48 horas</span>
         </h1>
 
         {/* Subtítulo */}
