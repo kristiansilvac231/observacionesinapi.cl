@@ -56,6 +56,8 @@ export function IniciarForm() {
   const searchParams = useSearchParams();
   const [status, setStatus] = useState<FormStatus>('idle');
   const [successEmail, setSuccessEmail] = useState('');
+  const [aceptado, setAceptado] = useState(false);
+  const [consentimientoError, setConsentimientoError] = useState(false);
 
   const rawTipo = searchParams.get('tipo');
   const rawPlan = searchParams.get('plan');
@@ -68,8 +70,14 @@ export function IniciarForm() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (!aceptado) {
+      setConsentimientoError(true);
+      return;
+    }
+    setConsentimientoError(false);
     setStatus('submitting');
     const formData = new FormData(e.currentTarget);
+    formData.set('consentimiento', 'aceptado');
     const email = String(formData.get('email') ?? '');
     const res = await fetch(FORMSPREE_ENDPOINT, {
       method: 'POST',
@@ -248,6 +256,35 @@ export function IniciarForm() {
             observación, o bien nosotros la buscamos por ti.
           </p>
         </div>
+
+        <div className="flex items-start gap-3">
+          <input
+            type="checkbox"
+            id="consentimiento"
+            checked={aceptado}
+            onChange={(e) => { setAceptado(e.target.checked); setConsentimientoError(false); }}
+            className="mt-0.5 h-4 w-4 shrink-0 accent-[#2557A7]"
+          />
+          <label htmlFor="consentimiento" className="text-xs leading-relaxed text-gray-500">
+            He leído y acepto la{' '}
+            <a
+              href="/privacidad"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#2557A7] underline"
+            >
+              Política de Privacidad
+            </a>
+            {' '}y autorizo el tratamiento de mis datos personales para la gestión de mi
+            observación ante INAPI.
+          </label>
+        </div>
+
+        {consentimientoError && (
+          <p className="text-xs text-red-500">
+            Debes aceptar la Política de Privacidad para continuar.
+          </p>
+        )}
 
         {status === 'error' && (
           <p className="text-xs text-red-500">

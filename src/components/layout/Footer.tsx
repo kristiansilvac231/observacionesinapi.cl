@@ -65,7 +65,7 @@ export function Footer() {
         <div className="mt-10 border-t border-white/20 pt-6 text-center text-xs text-white/50">
           © {new Date().getFullYear()} Observacionesinapi.cl — Todos los derechos reservados
           {' '}·{' '}
-          <Link href="/privacidad" className="hover:text-white/80">
+          <Link href="/privacidad" className="text-white/80 hover:text-white">
             Política de Privacidad
           </Link>
         </div>
