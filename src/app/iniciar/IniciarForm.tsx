@@ -244,9 +244,8 @@ export function IniciarForm() {
             className={`${inputClass} resize-none`}
           />
           <p className="mt-2 text-xs text-gray-400">
-            ¿Tienes el PDF de tu observación? Puedes enviárnoslo por email a{' '}
-            <span className="font-semibold">contacto@mpd-intelectual.cl</span>{' '}
-            junto con tu número de solicitud.
+            Una vez que recibas el mail con las instrucciones, nos podrás enviar el PDF con la
+            observación, o bien nosotros la buscamos por ti.
           </p>
         </div>
 
