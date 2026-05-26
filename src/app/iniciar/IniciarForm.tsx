@@ -275,7 +275,16 @@ export function IniciarForm() {
             >
               Política de Privacidad
             </a>
-            {' '}y autorizo el tratamiento de mis datos personales para la gestión de mi
+            {' '}y los{' '}
+            <a
+              href="/privacidad"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#2557A7] underline"
+            >
+              Términos y Condiciones
+            </a>
+            , y autorizo el tratamiento de mis datos personales para la gestión de mi
             observación ante INAPI.
           </label>
         </div>
