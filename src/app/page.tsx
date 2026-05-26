@@ -60,7 +60,7 @@ const cards: HeroCard[] = [
     description:
       'Para rechazos o resoluciones que requieren estrategia de apelación.',
     plan1: {
-      label: 'Representación Completa',
+      label: 'Representación ante el TDPI',
       price: 'Desde $299.990 CLP',
       detail: 'según complejidad del caso. Te representamos en todo el proceso de Apelación.',
     },
