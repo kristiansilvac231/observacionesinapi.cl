@@ -60,9 +60,9 @@ const cards: HeroCard[] = [
     description:
       'Para rechazos o resoluciones que requieren estrategia de apelación.',
     plan1: {
-      label: 'Evaluación jurídica',
-      price: 'Sin precio fijo',
-      detail: 'formulario de contacto → cotización personalizada',
+      label: 'Representación Completa',
+      price: 'Desde $299.990 CLP',
+      detail: 'según complejidad del caso. Te representamos en todo el proceso de Apelación.',
     },
     plan2: {
       label: '',
