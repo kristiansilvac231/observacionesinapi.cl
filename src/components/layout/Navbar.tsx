@@ -4,6 +4,7 @@ import { NavbarMobile } from './NavbarMobile';
 const navLinks = [
   { href: '/', label: 'INICIO' },
   { href: '/observaciones-de-fondo', label: 'SERVICIOS' },
+  { href: '/precios', label: 'PRECIOS' },
   { href: '/guia', label: 'GUÍA' },
   { href: '/como-funciona', label: '¿CÓMO FUNCIONA?' },
 ];

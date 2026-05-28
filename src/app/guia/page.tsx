@@ -23,6 +23,20 @@ type ArticleCard = {
 
 const articles: ArticleCard[] = [
   {
+    category: 'GUÍA GENERAL',
+    title: 'Observación de Fondo INAPI: Guía Completa',
+    description:
+      'Todo lo que necesitas saber sobre las observaciones de fondo, qué son, causales frecuentes, plazos y cómo responderlas.',
+    href: '/guia/observacion-de-fondo-inapi',
+  },
+  {
+    category: 'GUÍA PRÁCTICA',
+    title: 'Cómo Responder una Observación ante INAPI',
+    description:
+      'Guía paso a paso para responder correctamente y maximizar tus probabilidades de éxito.',
+    href: '/guia/como-responder-observacion-inapi',
+  },
+  {
     category: 'OBSERVACIÓN DE FONDO',
     title: 'Art. 20 f) — Semejanza Fonética o Gráfica',
     description:
