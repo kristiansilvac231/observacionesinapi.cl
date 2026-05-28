@@ -1,14 +1,21 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Bricolage_Grotesque, Hanken_Grotesk } from 'next/font/google';
 import Script from 'next/script';
 import { Footer } from '@/components/layout/Footer';
 import { Navbar } from '@/components/layout/Navbar';
 import { AppConfig } from '@/utils/AppConfig';
 import '@/styles/global.css';
 
-const inter = Inter({
+const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-bricolage',
+  display: 'swap',
+});
+
+const hanken = Hanken_Grotesk({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-hanken',
   display: 'swap',
 });
 
@@ -76,14 +83,14 @@ const organizationJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={inter.variable}>
+    <html lang="es" className={`${bricolage.variable} ${hanken.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
       </head>
-      <body className="flex min-h-screen flex-col font-[family-name:var(--font-inter)] text-[var(--texto-principal)]">
+      <body className="flex min-h-screen flex-col font-sans text-ink antialiased" style={{ background: 'var(--bg)' }}>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
