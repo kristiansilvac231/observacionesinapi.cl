@@ -10,6 +10,7 @@ const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
   variable: '--font-bricolage',
   display: 'swap',
+  preload: true,
 });
 
 const hanken = Hanken_Grotesk({
@@ -17,6 +18,7 @@ const hanken = Hanken_Grotesk({
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-hanken',
   display: 'swap',
+  preload: true,
 });
 
 export const metadata: Metadata = {

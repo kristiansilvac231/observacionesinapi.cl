@@ -129,15 +129,13 @@ export default function Home() {
                 display: 'inline-flex',
               }}
             >
-              <span
-                className="pulse-dot h-2 w-2 rounded-full"
-                style={{
-                  background: 'var(--accent)',
-                  flexShrink: 0,
-                  animation: 'pulse-amber 2.4s infinite',
-                }}
-                aria-hidden="true"
-              />
+              <span className="relative flex h-2 w-2 shrink-0" aria-hidden="true">
+                <span
+                  className="pulse-ring absolute inset-0 rounded-full"
+                  style={{ background: 'var(--accent)' }}
+                />
+                <span className="relative h-2 w-2 rounded-full" style={{ background: 'var(--accent)' }} />
+              </span>
               Tienes una observación de INAPI
             </span>
           </Reveal>
