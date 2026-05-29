@@ -64,23 +64,14 @@ const stats = [
 
 const testimonials = [
   {
-    initials: 'CR',
-    name: 'C.R.',
-    role: 'Fundadora · Pastelería',
     quote: 'Recibí una observación de fondo y no sabía por dónde partir. En 48 horas tenían el escrito listo y mi marca quedó registrada sin problemas.',
     delay: 1 as const,
   },
   {
-    initials: 'RF',
-    name: 'R.F.',
-    role: 'Gerente · Empresa SpA',
     quote: 'Pensé que perdería el nombre de mi empresa. El equipo respondió la observación con un argumento sólido y ganamos. Totalmente recomendados.',
     delay: 2 as const,
   },
   {
-    initials: 'VS',
-    name: 'V.S.',
-    role: 'Diseñadora · Estudio',
     quote: 'Claros con los plazos y con el precio. Me explicaron todo sin tecnicismos y resolvieron la observación de forma muy rápido. Volvería a confiar en ellos.',
     delay: 3 as const,
   },
@@ -461,8 +452,8 @@ export default function Home() {
 
           {/* Testimonios */}
           <div className="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-3">
-            {testimonials.map((t) => (
-              <Reveal key={t.initials} delay={t.delay}>
+            {testimonials.map((t, i) => (
+              <Reveal key={i} delay={t.delay}>
                 <figure
                   className="trust-quote flex h-full flex-col gap-[14px] rounded-[var(--r)] p-[26px_24px]"
                   style={{
@@ -484,26 +475,6 @@ export default function Home() {
                   <p className="flex-1 text-[1rem] leading-[1.55]" style={{ color: 'color-mix(in oklch, #fff 92%, transparent)' }}>
                     {t.quote}
                   </p>
-
-                  {/* Autor */}
-                  <figcaption className="mt-auto flex items-center gap-3 pt-[6px]">
-                    <span
-                      className="grid h-[42px] w-[42px] shrink-0 place-items-center rounded-full text-[1rem] font-bold"
-                      style={{
-                        fontFamily: 'var(--font-bricolage)',
-                        background: 'var(--accent)',
-                        color: 'var(--primary-deep)',
-                      }}
-                    >
-                      {t.initials}
-                    </span>
-                    <span>
-                      <span className="block text-[0.95rem] font-semibold text-white">{t.name}</span>
-                      <span className="block text-[0.82rem]" style={{ color: 'color-mix(in oklch, #fff 64%, transparent)' }}>
-                        {t.role}
-                      </span>
-                    </span>
-                  </figcaption>
                 </figure>
               </Reveal>
             ))}
