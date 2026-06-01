@@ -122,9 +122,9 @@ export default function Home() {
             <span
               className="inline-flex items-center gap-[10px] rounded-[100px] border px-4 py-2 text-[0.82rem] font-semibold uppercase tracking-[0.14em]"
               style={{
-                background: 'var(--primary-tint)',
-                borderColor: 'var(--line)',
-                color: 'var(--ink-soft)',
+                background: 'rgba(255,255,255,0.08)',
+                borderColor: 'rgba(255,255,255,0.18)',
+                color: 'rgba(255,255,255,0.80)',
                 marginBottom: '28px',
                 display: 'inline-flex',
               }}
@@ -149,13 +149,13 @@ export default function Home() {
                 fontWeight: 800,
                 letterSpacing: '-0.035em',
                 lineHeight: 1.05,
-                color: 'var(--ink)',
+                color: '#ffffff',
               }}
             >
               Nosotros la respondemos por ti en{' '}
               <span
                 className="relative whitespace-nowrap"
-                style={{ color: 'var(--primary)' }}
+                style={{ color: '#7EB8FF' }}
               >
                 48 horas
                 <span
@@ -181,7 +181,7 @@ export default function Home() {
               className="mt-6"
               style={{
                 fontSize: 'clamp(1.05rem, 1.6vw, 1.28rem)',
-                color: 'var(--ink-soft)',
+                color: 'rgba(255,255,255,0.75)',
                 maxWidth: '48ch',
                 lineHeight: 1.55,
               }}
@@ -195,9 +195,9 @@ export default function Home() {
             <div
               className="mt-[30px] inline-flex items-center gap-3 rounded-[100px] border px-5 py-[13px] text-[0.98rem] font-semibold"
               style={{
-                background: 'var(--alert-tint)',
-                borderColor: 'color-mix(in oklch, var(--alert) 35%, transparent)',
-                color: 'var(--alert)',
+                background: 'rgba(230,81,0,0.18)',
+                borderColor: 'rgba(230,81,0,0.40)',
+                color: '#FFAD80',
               }}
             >
               <ClockIcon />
@@ -224,9 +224,9 @@ export default function Home() {
                 href="/precios"
                 className="inline-flex items-center gap-[10px] rounded-[var(--r-sm)] border px-7 py-[15px] text-[0.96rem] font-bold transition-[transform,border-color,background] duration-200 hover:-translate-y-0.5 hover:border-primary hover:bg-primary-tint"
                 style={{
-                  background: 'transparent',
-                  color: 'var(--primary)',
-                  borderColor: 'var(--line)',
+                  background: 'rgba(255,255,255,0.07)',
+                  color: '#ffffff',
+                  borderColor: 'rgba(255,255,255,0.25)',
                 }}
               >
                 Ver precios
