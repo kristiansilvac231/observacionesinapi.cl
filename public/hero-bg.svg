@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice">
+  <rect width="1440" height="760" fill="#0B1836"/>
+  <!-- Large outer chevron -->
+  <polygon points="900,0 1100,0 1440,380 1440,760 1240,760 900,380" fill="#0F2050" opacity="0.9"/>
+  <!-- Second chevron -->
+  <polygon points="1020,0 1160,0 1440,280 1440,760 1300,760 1020,280" fill="#122460" opacity="0.85"/>
+  <!-- Third chevron -->
+  <polygon points="1120,0 1220,0 1440,200 1440,760 1340,760 1120,200" fill="#1535A0" opacity="0.7"/>
+  <!-- Bright accent chevron small -->
+  <polygon points="1200,200 1280,200 1440,380 1440,560 1360,560 1200,380" fill="#1A52D0" opacity="0.75"/>
+  <!-- Smallest accent -->
+  <polygon points="1270,330 1330,330 1440,440 1440,550 1380,550 1270,440" fill="#1E66F5" opacity="0.8"/>
+  <!-- Subtle bottom left gradient overlay -->
+  <defs>
+    <radialGradient id="vignette" cx="0%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#0B1836" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0B1836" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1440" height="760" fill="url(#vignette)"/>
+</svg>
